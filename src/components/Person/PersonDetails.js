@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {StoreContext} from "../../context/StoreContext";
+const PersonDetails = ({allPerson}) => {
 
-const PersonDetails = ({person}) => {
+
     return (
         <li>
             <div className="person-details">
                 <div className="person">
-                    <h3>{person.name}</h3>
+                    <h3>{allPerson.name}</h3>
                 </div>
             </div>
         </li>

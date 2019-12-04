@@ -2,7 +2,7 @@ import React, { useContext, useEffect} from 'react';
 import { StoreContext } from '../../context/StoreContext';
 import SongDetails from './SongDetails';
 
-const getAllSong = () => {
+const GetAllSong = () => {
 
 
     const {allSong, getAllSongApi} = useContext(StoreContext);
@@ -30,6 +30,6 @@ const getAllSong = () => {
 
 };
 
-export default getAllSong;
+export default GetAllSong;
 
 

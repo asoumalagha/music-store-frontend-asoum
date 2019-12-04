@@ -2,7 +2,7 @@ import React, { useContext, useEffect} from 'react';
 import { StoreContext } from '../../context/StoreContext';
 import PersonDetails from './PersonDetails';
 
-const getAllPerson = () => {
+const GetAllPerson = () => {
 
 
     const {allPerson, getAllPersonApi} = useContext(StoreContext);
@@ -15,9 +15,9 @@ const getAllPerson = () => {
         allPerson.length ?(
             <div className="person-list">
                 <ul>
-                    {allPerson.map((person) =>
+                    {allPerson.map((allPerson) =>
                         {
-                            return (<PersonDetails person={person} key={allPerson.id}/>);
+                            return (<PersonDetails allPerson={allPerson} key={allPerson.id}/>);
                         })
                     }
                 </ul>
@@ -30,6 +30,6 @@ const getAllPerson = () => {
 
 };
 
-export default getAllPerson;
+export default GetAllPerson;
 
 
